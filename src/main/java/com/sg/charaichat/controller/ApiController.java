@@ -50,7 +50,7 @@ public class ApiController {
     private ChatService chatService;
 
     //Master API_KEY
-    private final String M_KEY = "4e0ea0e7-9b23-4666-b362-4ffdb8e7971a";
+    private final String M_KEY = "";
 
     @GetMapping("/api/bots")
     public Iterable<AIUser> getAiUsers() {
