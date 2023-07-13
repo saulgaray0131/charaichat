@@ -24,7 +24,7 @@ To set up the development environment and run the backend server, follow these s
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/chat-bot-backend.git
+git clone https://github.com/saulgaray0131/charaichat
 ```
 
 2. Navigate to the project directory:
