@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
+import com.sg.charaichat.AppConfig;
 import com.sg.charaichat.model.AIUser;
 import com.sg.charaichat.model.Chat;
 import com.sg.charaichat.model.ChatLine;
@@ -37,7 +38,10 @@ public class ChatService {
     @Autowired
     private AiUserRepository aiUserRepository;
 
-    private final String GPT_API_KEY = "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";
+    @Autowired
+    private AppConfig appConfig;
+
+    private final String GPT_API_KEY = appConfig.getApiKey();
     private final String GPT_API_URL = "https://api.openai.com/v1/chat/completions";
     
     public Chat createChat(AIUser ai, User user) {

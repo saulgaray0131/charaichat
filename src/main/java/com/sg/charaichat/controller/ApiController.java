@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sg.charaichat.AppConfig;
 import com.sg.charaichat.model.AIUser;
 import com.sg.charaichat.model.Chat;
 import com.sg.charaichat.model.ChatDataRequest;
@@ -48,9 +49,11 @@ public class ApiController {
     private ChatLineRepository chatLineRepository;
     @Autowired
     private ChatService chatService;
+    @Autowired
+    private AppConfig appConfig;
 
     //Master API_KEY
-    private final String M_KEY = "4e0ea0e7-9b23-4666-b362-4ffdb8e7971a";
+    private final String M_KEY = appConfig.getMasterApiKey();
 
     @GetMapping("/api/bots")
     public Iterable<AIUser> getAiUsers() {
