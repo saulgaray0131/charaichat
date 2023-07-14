@@ -9,6 +9,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -52,11 +53,13 @@ public class ApiController {
     @Autowired
     private AppConfig appConfig;
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping("/api/bots")
     public Iterable<AIUser> getAiUsers() {
         return aiUserRepository.findAll();
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/create/bot")
     public AIUser createBot(@RequestHeader HttpHeaders headers, @NotNull @RequestBody AIUser aiUser) throws AuthException {
         if(headers.get("auth").get(0) != appConfig.getMasterApiKey())
@@ -66,11 +69,13 @@ public class ApiController {
         return aiUserRepository.save(aiUser);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping("/api/bot/{id}")
     public Optional<AIUser> getAiUser(@NotNull @PathVariable Integer id) {
         return aiUserRepository.findById(id);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/create/user")
     public User createUser(@NotNull @RequestBody User request) {
         User newUser = new User();
@@ -80,6 +85,7 @@ public class ApiController {
         return userRepository.save(newUser);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/chats")
     public Iterable<Chat> getUserChats(@NotNull @RequestBody User request) throws AuthException{
         User user = userRepository.findById(request.getId()).orElseThrow();
@@ -89,6 +95,7 @@ public class ApiController {
         return chatRepository.findByUserId(user.getId());
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/create/chat")
     public Chat createChat(@NotNull @RequestBody CreateChatRequest request) throws AuthException {
 
@@ -106,6 +113,7 @@ public class ApiController {
         return chatRepository.save(newChat);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/chatdata")
     public ChatDataResponse getChatData(@NotNull @RequestBody ChatDataRequest request) throws Exception {
 
@@ -122,6 +130,7 @@ public class ApiController {
         return chatData;
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/chat")
     public List<ChatLine> chat(@NotNull @RequestBody ChatRequest request) throws Exception {
         User user = userRepository.findById(request.getUser().getId()).orElseThrow();
@@ -139,6 +148,7 @@ public class ApiController {
         return Arrays.asList(chatResponse, chatService.chat(chatResponse));
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/account/edit/username")
     public User editUsername(@NotNull @RequestBody EditUsernameRequest request) throws Exception {
         User user = userRepository.findById(request.getUser().getId()).orElseThrow();
@@ -151,6 +161,7 @@ public class ApiController {
         return userRepository.save(user);
     }
 
+    @CrossOrigin(origins = "http://localhost:8080")
     @PostMapping("/api/account/data")
     public User getUser(@NotNull @RequestBody GetUserRequest request) throws Exception {
         User user = userRepository.findById(request.getUser().getId()).orElseThrow();
