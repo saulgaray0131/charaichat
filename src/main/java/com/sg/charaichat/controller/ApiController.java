@@ -52,9 +52,6 @@ public class ApiController {
     @Autowired
     private AppConfig appConfig;
 
-    //Master API_KEY
-    private final String M_KEY = appConfig.getMasterApiKey();
-
     @GetMapping("/api/bots")
     public Iterable<AIUser> getAiUsers() {
         return aiUserRepository.findAll();
@@ -62,7 +59,7 @@ public class ApiController {
 
     @PostMapping("/api/create/bot")
     public AIUser createBot(@RequestHeader HttpHeaders headers, @NotNull @RequestBody AIUser aiUser) throws AuthException {
-        if(headers.get("auth").get(0) != M_KEY)
+        if(headers.get("auth").get(0) != appConfig.getMasterApiKey())
             throw new AuthException("Bad Auth");
 
         aiUser.setUrl("placeholder.png");

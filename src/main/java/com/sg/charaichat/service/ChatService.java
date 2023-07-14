@@ -40,9 +40,9 @@ public class ChatService {
 
     @Autowired
     private AppConfig appConfig;
-
-    private final String GPT_API_KEY = appConfig.getApiKey();
+   
     private final String GPT_API_URL = "https://api.openai.com/v1/chat/completions";
+
     
     public Chat createChat(AIUser ai, User user) {
 
@@ -74,7 +74,7 @@ public class ChatService {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.setBearerAuth(GPT_API_KEY);
+        headers.setBearerAuth(appConfig.getApiKey());
 
         HttpEntity<GPTRequest> entity = new HttpEntity<GPTRequest>(request, headers);
         HttpEntity<GPTResponse> response = restTemplate.exchange(GPT_API_URL, HttpMethod.POST, entity, GPTResponse.class);
