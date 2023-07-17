@@ -1,0 +1,320 @@
+{
+    "characters": [
+      {
+        "name": "Batman",
+        "title": "DC Comics",
+        "system_dsc": "placeholder",
+        "description": "The Dark Knight of Gotham City, a vigilante from DC Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Spider-Man",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "Your friendly neighborhood superhero from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Darth Vader",
+        "title": "Star Wars",
+        "system_dsc": "placeholder",
+        "description": "The iconic Sith Lord and central figure from Star Wars.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Superman",
+        "title": "DC Comics",
+        "system_dsc": "placeholder",
+        "description": "The last son of Krypton and iconic hero from DC Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Wonder Woman",
+        "title": "DC Comics",
+        "system_dsc": "placeholder",
+        "description": "An Amazonian warrior princess and hero from DC Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Harry Potter",
+        "title": "Harry Potter series",
+        "system_dsc": "placeholder",
+        "description": "The famous wizard and protagonist of the Harry Potter series.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Sherlock Holmes",
+        "title": "Sherlock Holmes stories",
+        "system_dsc": "placeholder",
+        "description": "The brilliant detective from Sherlock Holmes stories.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "James Bond",
+        "title": "James Bond films",
+        "system_dsc": "placeholder",
+        "description": "The suave and skilled spy from James Bond films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Captain America",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The patriotic super-soldier from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Elsa",
+        "title": "Frozen",
+        "system_dsc": "placeholder",
+        "description": "The Snow Queen with magical ice powers from Frozen.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Captain Jack Sparrow",
+        "title": "Pirates of the Caribbean",
+        "system_dsc": "placeholder",
+        "description": "The witty and eccentric pirate captain from Pirates of the Caribbean.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Iron Man",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The genius billionaire and armored Avenger from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Mickey Mouse",
+        "title": "Disney",
+        "system_dsc": "placeholder",
+        "description": "The iconic and beloved Disney character.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Bugs Bunny",
+        "title": "Looney Tunes",
+        "system_dsc": "placeholder",
+        "description": "The clever and mischievous animated rabbit from Looney Tunes.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Pikachu",
+        "title": "Pokemon",
+        "system_dsc": "placeholder",
+        "description": "The electrifying and adorable Pokemon mascot.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Hermione Granger",
+        "title": "Harry Potter series",
+        "system_dsc": "placeholder",
+        "description": "The brilliant and resourceful witch from the Harry Potter series.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Luke Skywalker",
+        "title": "Star Wars",
+        "system_dsc": "placeholder",
+        "description": "The legendary Jedi Knight and hero from Star Wars.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Gandalf",
+        "title": "Lord of the Rings",
+        "system_dsc": "placeholder",
+        "description": "The wise and powerful wizard from the Lord of the Rings.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Frodo Baggins",
+        "title": "Lord of the Rings",
+        "system_dsc": "placeholder",
+        "description": "The brave and determined hobbit from the Lord of the Rings.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Deadpool",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The witty and fourth-wall-breaking mercenary from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Mario",
+        "title": "Super Mario games",
+        "system_dsc": "placeholder",
+        "description": "The iconic plumber and hero of the Super Mario games.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Princess Leia",
+        "title": "Star Wars",
+        "system_dsc": "placeholder",
+        "description": "The fearless and strong-willed leader from Star Wars.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Thor",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The mighty Asgardian god and Avenger from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Black Widow",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The skilled spy and Avenger from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Joker",
+        "title": "Batman",
+        "system_dsc": "placeholder",
+        "description": "The iconic and chaotic arch-nemesis of Batman.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Wolverine",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The fierce and adamantium-clawed mutant from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Han Solo",
+        "title": "Star Wars",
+        "system_dsc": "placeholder",
+        "description": "The charming and roguish smuggler from Star Wars.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Captain Marvel",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The powerful superhero and avenger from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Yoda",
+        "title": "Star Wars",
+        "system_dsc": "placeholder",
+        "description": "The wise and ancient Jedi Master from Star Wars.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Shrek",
+        "title": "Shrek films",
+        "system_dsc": "placeholder",
+        "description": "The green and lovable ogre from the Shrek films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Black Panther",
+        "title": "Marvel Comics",
+        "system_dsc": "placeholder",
+        "description": "The Wakandan king and superhero from Marvel Comics.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Jon Snow",
+        "title": "Game of Thrones",
+        "system_dsc": "placeholder",
+        "description": "The honorable and brave character from Game of Thrones.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "The Terminator",
+        "title": "Terminator films",
+        "system_dsc": "placeholder",
+        "description": "The relentless and iconic cyborg assassin from Terminator films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Katniss Everdeen",
+        "title": "The Hunger Games",
+        "system_dsc": "placeholder",
+        "description": "The skilled archer and determined heroine from The Hunger Games.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Sonic the Hedgehog",
+        "title": "Sonic the Hedgehog games",
+        "system_dsc": "placeholder",
+        "description": "The speedy and blue hedgehog from Sonic the Hedgehog games.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Lara Croft",
+        "title": "Tomb Raider",
+        "system_dsc": "placeholder",
+        "description": "The adventurous and resourceful archaeologist from Tomb Raider.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "John Wick",
+        "title": "John Wick films",
+        "system_dsc": "placeholder",
+        "description": "The skilled and deadly assassin from John Wick films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Neo",
+        "title": "The Matrix",
+        "system_dsc": "placeholder",
+        "description": "The chosen one and hero from The Matrix trilogy.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Indiana Jones",
+        "title": "Indiana Jones films",
+        "system_dsc": "placeholder",
+        "description": "The adventurous and daring archaeologist from Indiana Jones films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Ellen Ripley",
+        "title": "Alien films",
+        "system_dsc": "placeholder",
+        "description": "The resilient and courageous survivor from Alien films.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "The Doctor",
+        "title": "Doctor Who",
+        "system_dsc": "placeholder",
+        "description": "The time-traveling and regenerating Time Lord from Doctor Who.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Princess Peach",
+        "title": "Super Mario games",
+        "system_dsc": "placeholder",
+        "description": "The princess of the Mushroom Kingdom from Super Mario games.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Jack Skellington",
+        "title": "The Nightmare Before Christmas",
+        "system_dsc": "placeholder",
+        "description": "The pumpkin king of Halloween Town from The Nightmare Before Christmas.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "Dracula",
+        "title": "Dracula",
+        "system_dsc": "placeholder",
+        "description": "The iconic vampire and title character of Bram Stoker's Dracula.",
+        "url": "placeholder url"
+      },
+      {
+        "name": "James T. Kirk",
+        "title": "Star Trek",
+        "system_dsc": "placeholder",
+        "description": "The charismatic and adventurous captain from Star Trek.",
+        "url": "placeholder url"
+      }
+    ]
+  }
+  
