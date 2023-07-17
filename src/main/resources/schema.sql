@@ -15,7 +15,7 @@ CREATE TABLE `chat_lines` (
 
 CREATE TABLE `aiusers` (
   `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  `title` VARCHAR(128)
+  `title` VARCHAR(128),
   `name` VARCHAR(128),
   `url` VARCHAR(128),
   `system_dsc` TEXT,
@@ -23,8 +23,8 @@ CREATE TABLE `aiusers` (
 );
 
 CREATE TABLE `users` (
-  `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  `id` INT PRIMARY KEY IDENTITY,
   `url` VARCHAR(128),
   `username` VARCHAR(36),
   `uuid` VARCHAR(36)
-) AUTO_INCREMENT = 10000;
+) ;

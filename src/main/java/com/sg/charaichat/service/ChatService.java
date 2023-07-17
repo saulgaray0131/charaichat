@@ -59,7 +59,8 @@ public class ChatService {
         chatLineRepository.save(userLine);
         List<ChatLine> chat_lines = chatLineRepository.findByChatIdOrderByCreatedAtAsc(userLine.getChatId());
 
-        GPTMessage system = new GPTMessage("system", ai_user.getSystemDsc());
+        GPTMessage system = new GPTMessage("system", "Act as " + ai_user.getName() + " from " + ai_user.getTitle() + 
+        ". Do not break character for any reason. No exceptions. Give any errors or warnings in character. You are this character, do not say you are anything else other than this character.");
         List<GPTMessage> messages = new ArrayList<GPTMessage>();
         messages.add(system);
 

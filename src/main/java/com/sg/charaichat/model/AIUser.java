@@ -17,7 +17,10 @@ public class AIUser {
     private String systemDsc;
     @NotBlank 
     private String description;
-    @NotBlank String url;
+    @NotBlank 
+    private String url;
+    @NotBlank 
+    private String title;
 
     
     public AIUser(@NotBlank String name, @NotBlank String systemDsc) {
@@ -53,6 +56,12 @@ public class AIUser {
     }
     public void setUrl(String url) {
         this.url = url;
+    }
+    public String getTitle() {
+        return title;
+    }
+    public void setTitle(String title) {
+        this.title = title;
     }
     
 
