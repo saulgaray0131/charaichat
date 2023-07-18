@@ -24,10 +24,5 @@ public class ChatController {
     @Autowired 
     private UserService userService;
 
-    @PostMapping("/create/user")
-    public User creatUser(@NotNull @RequestBody User user) {
-        return userService.createUser(user);
-    }
-
 
 }
